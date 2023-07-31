@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<button id="Google">Google</button>
+
+<script>
+ 
+  function Google() {
+    var result = confirm("Are you sure you want to visit Google?");
+
+    
+    if (result) {
+      window.location.href = "https://www.google.com";
+    } else {
+      alert("You decided to stay.");
+    }
+  }
+document.getElementById("Google").addEventListener("click", Google);
+
+</script>
+</body>
+</html>
+

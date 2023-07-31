@@ -1,0 +1,48 @@
+
+<html>
+<body>
+    
+    <script>
+        function getInput(message) {
+            return x=(prompt(message));
+        }
+
+        function Operators(operator, num1, num2) {
+            switch (operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    return num1 / num2;
+                default:
+                    return "Invalid operator";
+            }
+        }
+
+        function main() {
+             num1 = getInput("Enter the first number:");
+             operator = prompt("Enter the operator (+, -, *, /):");
+             num2 = getInput("Enter the second number:");
+
+       result = Operators(operator, num1, num2);
+
+            if (typeof result === 'number') {
+                alert("Result: " + result);
+            } else {
+                alert(result);
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>
+
+
+
+
+
+

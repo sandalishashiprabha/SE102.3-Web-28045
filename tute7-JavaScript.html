@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<script>
+
+var total=0;
+
+for ( var i=0;i<5;i++)
+{
+var mark=parseFloat(window.prompt("Enter a mark ","mark"));
+total=total+mark;
+}
+
+document.write("Total is "+total+"<br>");
+var average=total/5;
+document.write("Average is "+average+"<br>");
+
+function displayGreeting(){
+if(average > 30)
+ {
+alert("Congrats!You passed");
+}
+else
+{
+alert("Better luck next time");
+}
+}
+ 
+</script>
+ <input type="button" name="button" value="GRADE" onclick="displayGreeting()">
+</body>
+</html>
+ 
+
+
+
+

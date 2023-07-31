@@ -1,0 +1,19 @@
+<html>
+<body>
+  
+    <label ="nicNumber">Enter Student's NIC Number:</label>
+    <input type="text" id="nicNumber">
+    <button onclick="YearOfBirth()">Year of Birth</button><br>
+    <p id="result"></p>
+
+    <script>
+        function YearOfBirth() {
+             nicNumber = document.getElementById("nicNumber").value;
+
+             yearOfBirth = nicNumber.substring(0, 4);
+
+            document.getElementById("result").innerText = "Year of Birth: " + yearOfBirth;
+        }
+    </script>
+</body>
+</html>
